@@ -1,0 +1,19 @@
+.login {
+    align-items:center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(163, 36, 115)
+}
+
+.button {
+    margin-top: 20px !important;
+}
