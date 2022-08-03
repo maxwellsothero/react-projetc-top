@@ -6,11 +6,13 @@ import Contact from "./pages/Contact";
 import Help from "./pages/Help";
 
 import './style.css';
+import Navbar from "./components/Navbar";
 
 
 export default function App() {
   return (
     <div className="app">
+      <Navbar/>
 
       <BrowserRouter>
         <Routes>
