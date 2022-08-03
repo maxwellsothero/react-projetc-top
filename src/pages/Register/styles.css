@@ -1,0 +1,21 @@
+
+
+
+body{
+    background-color: #dedede;
+}
+
+.text {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.input_nome, .input_email, .input_telefone, .input_senha {
+    margin-bottom: 20px !important;
+}
+
+.card{
+    margin-top: 30px;
+    padding: 20px;
+
+}
