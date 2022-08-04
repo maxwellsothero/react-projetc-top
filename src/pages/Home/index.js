@@ -9,7 +9,7 @@ export default function Home() {
             <Divider/>
 
             <p>
-                O conteudo poderia vir aqui
+                O conteudo poderia vir aqui...
             </p>
         </div>
     )
