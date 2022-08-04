@@ -4,9 +4,11 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
 import Help from "./pages/Help";
+import CategoryList from "./pages/CategoryList";
 
 import './style.css';
 import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
 
 
 export default function App() {
@@ -21,6 +23,7 @@ export default function App() {
           <Route path="/contato" element={ <Contact/> }   />
           <Route path="/help" element={<Help/>} />
           <Route path="/cadastro" element={ <Register/> }   />
+          <Route path="/categorias" element={<CategoryList/>} />
 
         </Routes>
       </BrowserRouter>
