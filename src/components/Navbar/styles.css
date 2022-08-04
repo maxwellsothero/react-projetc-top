@@ -2,3 +2,15 @@
     width: 200px;
     padding-top: 30px;
 }
+
+.sair .MuiTypography-body1 {
+    color: red;
+    
+}
+
+
+.sair_texto svg{
+    color: red;
+}
+
+/*<span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root">Sair</span>*/

@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import {Favorite, Home, Sell} from "@mui/icons-material";
+import {  BubbleChart, ContactPage, ContactSupport, ContentCopy, ExitToApp, Home, Sell} from "@mui/icons-material";
 import { Drawer, Divider, List, ListItemButton, ListItemText, ListItemIcon } from '@mui/material';
 
 import "./styles.css";
@@ -37,6 +37,33 @@ export default function Navbar() {
             <ListItemIcon><Sell/></ListItemIcon>
             <ListItemText>Categorias</ListItemText>
           </ListItemButton>
+
+          <ListItemButton>
+            <ListItemIcon><BubbleChart/></ListItemIcon>
+            <ListItemText>Produtos</ListItemText>
+          </ListItemButton>
+
+          <ListItemButton>
+            <ListItemIcon><ContentCopy/></ListItemIcon>
+            <ListItemText>Relatórios</ListItemText>
+          </ListItemButton>
+
+          <ListItemButton>
+            <ListItemIcon><ContactPage/></ListItemIcon>
+            <ListItemText>Contatos</ListItemText>
+          </ListItemButton>
+
+          <ListItemButton>
+            <ListItemIcon><ContactSupport/></ListItemIcon>
+            <ListItemText>Ajuda</ListItemText>
+          </ListItemButton>
+          <Divider/>
+
+          <ListItemButton className="sair">
+            <ListItemIcon className="sair_texto"><ExitToApp/></ListItemIcon>
+            <ListItemText>Sair</ListItemText>
+          </ListItemButton>
+
         </List>
       </Drawer>
 
