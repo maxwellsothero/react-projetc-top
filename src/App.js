@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
@@ -8,13 +8,14 @@ import Help from "./pages/Help";
 import './style.css';
 import Navbar from "./components/Navbar";
 
-
 export default function App() {
   return (
     <div className="app">
-      <Navbar/>
 
+      
       <BrowserRouter>
+        <Navbar/>
+    
         <Routes>
           <Route path="/" element={ <Home/> }   />
           <Route path="/login" element={ <Login/> }   />

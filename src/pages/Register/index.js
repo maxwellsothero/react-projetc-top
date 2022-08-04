@@ -2,11 +2,16 @@ import { Button, Card, Grid, TextField, Typography, Link } from "@mui/material";
 import { Container } from "@mui/system";
 
 
+
 import "./styles.css";
 
 
 export default function Register () {
     return (
+
+        
+            
+
         <Container fixed>
         <Card className="card" variant="outlined" >{
             
@@ -33,6 +38,8 @@ export default function Register () {
         
     </div>} </Card>
     </Container>
+
+
 
     )
     
