@@ -9,7 +9,6 @@ export default function App() {
     <BrowserRouter>
       <Link to="/">Inicio</Link>
       <Link to="/help">Ajuda</Link>
-
       <Routes>
         <Route path="/" element={ <Home/> }   />
         <Route path="/contato" element={ <Contact/> }   />
