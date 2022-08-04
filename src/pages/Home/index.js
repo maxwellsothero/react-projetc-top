@@ -61,6 +61,10 @@ export default function Home() {
 
             <Bar options={options} data={data} />
 
+
+            <p>
+                O conteudo poderia vir aqui...
+            </p>
         </div>
     )
 }
