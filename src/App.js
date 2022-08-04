@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
 import Help from "./pages/Help";
+import RecoverAccount from "./pages/RecoverAccount";
 
 import './style.css';
 import Navbar from "./components/Navbar";
@@ -21,6 +22,8 @@ export default function App() {
           <Route path="/contato" element={ <Contact/> }   />
           <Route path="/help" element={<Help/>} />
           <Route path="/cadastro" element={ <Register/> }   />
+          <Route path="/recuperar-conta" element={ <RecoverAccount/> }   />
+          
 
         </Routes>
       </BrowserRouter>
