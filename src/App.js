@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
@@ -9,14 +10,17 @@ import RecoverAccount from "./pages/RecoverAccount";
 
 import './style.css';
 import Navbar from "./components/Navbar";
+
 import Cards from "./components/Cards";
 
 export default function App() {
   return (
     <div className="app">
-      <Navbar/>
 
+      
       <BrowserRouter>
+        <Navbar/>
+    
         <Routes>
           <Route path="/" element={ <Home/> }   />
           <Route path="/login" element={ <Login/> }   />
