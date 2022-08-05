@@ -10,7 +10,7 @@ import RecoverAccount from "./pages/RecoverAccount";
 
 import './style.css';
 import Navbar from "./components/Navbar";
-
+import Produtos from "./pages/Produtos";
 
 
 export default function App() {
@@ -29,8 +29,8 @@ export default function App() {
           <Route path="/cadastro" element={ <Register/> }   />
           <Route path="/categorias" element={<CategoryList/>} />
           <Route path="/recuperar-conta" element={ <RecoverAccount/> }   />
+          <Route path="/produtos" element={ <Produtos/> }   />
 
-         
          
 
         </Routes>
