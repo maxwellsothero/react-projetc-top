@@ -1,0 +1,79 @@
+
+{
+    "produtos":[
+        {
+            "id": 1,
+            "name":"Café",
+            "description": "torrado",
+            "category": "tradicional"
+        }
+        ,
+        
+        {
+            "id": 2,
+            "name":"leite",
+            "description": "liquido",
+            "category": "integral"
+        },
+
+        {
+            "id": 3,
+            "name":"pão",
+            "description": "carioca",
+            "category": "pequeno"
+        }
+
+
+    ],
+
+    "category":[
+        {
+            "id":1,
+            "name":"3 Corações",
+            "description":"torrado",
+            "photo":""
+        },
+        {
+            "id":2,
+            "name":"Nestle",
+            "description":"de vaca",
+            "photo":""
+        },
+        {
+            "id":3,
+            "name":"de trigo",
+            "description":"assado",
+            "photo":""
+        }
+    ],
+
+    "client":[
+        {
+            "id":1,
+            "name":"Jose da Silva",
+            "phone":"66 8856 9985",
+            "email":"josedasilva@gmail"
+
+        },
+        {
+            "id":2,
+            "name":"maria da Silva",
+            "phone":"85 9999 9985",
+            "email":"mariadasilva@gmail"
+
+        },
+        {
+            "id":2,
+            "name":"carlos de Souza",
+            "phone":"77 8855 4477",
+            "email":"carlos@gmail"
+
+        }
+    ]
+    
+
+}
+
+
+
+
