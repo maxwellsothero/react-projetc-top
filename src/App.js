@@ -12,6 +12,7 @@ import Nova from "./pages/CategoryList/Nova";
 import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
+import CustomersList from "./pages/CustomersList";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/recuperar-conta" element={ <RecoverAccount/> }   />
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
+          <Route path="/clientes" element={ <CustomersList/> }   />
          
 
         </Routes>

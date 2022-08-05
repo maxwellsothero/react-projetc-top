@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import {  BubbleChart, ContactPage, ContactSupport, ContentCopy, ExitToApp, Home, Sell} from "@mui/icons-material";
+import {  BubbleChart, ContactPage, ContactSupport, ContentCopy, ExitToApp, Home, Person, Sell} from "@mui/icons-material";
 import { Drawer, Divider, List, ListItemButton, ListItemText, ListItemIcon } from '@mui/material';
 
 import "./styles.css";
@@ -58,6 +58,10 @@ export default function Navbar() {
             <ListItemText>Produtos</ListItemText>
           </ListItemButton>
         
+          <ListItemButton onClick={() => redirect('/clientes')}>
+            <ListItemIcon><Person/></ListItemIcon>
+            <ListItemText>Clientes</ListItemText>
+          </ListItemButton>
 
           <ListItemButton onClick={() => redirect('/relatorios')}>
             <ListItemIcon><ContentCopy/></ListItemIcon>
@@ -73,6 +77,7 @@ export default function Navbar() {
             <ListItemIcon><ContactSupport/></ListItemIcon>
             <ListItemText>Ajuda</ListItemText>
           </ListItemButton>
+
           <Divider/>
 
           <ListItemButton className="sair" onClick={() => redirect('/login')}>
