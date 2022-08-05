@@ -30,6 +30,7 @@ export default function App() {
           <Route path="/categorias" element={<CategoryList/>} />
           <Route path="/recuperar-conta" element={ <RecoverAccount/> }   />
           <Route path="/produtos" element={ <Produtos/> }   />
+
          
 
         </Routes>

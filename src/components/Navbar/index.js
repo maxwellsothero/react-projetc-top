@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,6 +14,9 @@ import "./styles.css";
 
 export default function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  
 
   const [menu, setMenu] = React.useState(false);
   
@@ -21,7 +24,10 @@ export default function Navbar() {
     return;
   }
 
-  
+  const redirect = (route) => {
+    navigate(route);
+    setMenu(false);
+  }
 
   const handleMenu = () => {
     setMenu(!menu);
@@ -37,38 +43,39 @@ export default function Navbar() {
         <Divider/>
         
         <List>
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/')}>
             <ListItemIcon><Home/></ListItemIcon>
             <ListItemText>Inicio</ListItemText>
           </ListItemButton>
 
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/categorias')}>
             <ListItemIcon><Sell/></ListItemIcon>
             <ListItemText>Categorias</ListItemText>
           </ListItemButton>
 
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/Produtos')}>
             <ListItemIcon><BubbleChart/></ListItemIcon>
             <ListItemText>Produtos</ListItemText>
           </ListItemButton>
+        
 
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/relatorios')}>
             <ListItemIcon><ContentCopy/></ListItemIcon>
             <ListItemText>Relatórios</ListItemText>
           </ListItemButton>
 
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/contato')}>
             <ListItemIcon><ContactPage/></ListItemIcon>
             <ListItemText>Contatos</ListItemText>
           </ListItemButton>
 
-          <ListItemButton>
+          <ListItemButton onClick={() => redirect('/help')}>
             <ListItemIcon><ContactSupport/></ListItemIcon>
             <ListItemText>Ajuda</ListItemText>
           </ListItemButton>
           <Divider/>
 
-          <ListItemButton className="sair">
+          <ListItemButton className="sair" onClick={() => redirect('/login')}>
             <ListItemIcon className="sair_texto"><ExitToApp/></ListItemIcon>
             <ListItemText>Sair</ListItemText>
           </ListItemButton>
