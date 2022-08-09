@@ -14,6 +14,8 @@ import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
 
+import Users from "./pages/Users";
+
 export default function App() {
   return (
     <div className="app">
@@ -33,6 +35,7 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/usuarios" element={ <Users/> }   />
          
 
         </Routes>
