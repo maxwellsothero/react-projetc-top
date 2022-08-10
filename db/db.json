@@ -1,5 +1,22 @@
-
 {
+    "profiles": [
+      {
+        "name": "Teste",
+        "permissions": [
+          "Teste"
+        ],
+        "id": 1
+      },
+      {
+        "name": "Administrador",
+        "permissions": [
+          "criar",
+          "listar",
+          "excluir"
+        ],
+        "id": 2
+      }
+    ],
     "produtos":[
         {
             "id": 1,
@@ -96,7 +113,4 @@
     
 
 }
-
-
-
 

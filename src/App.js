@@ -13,6 +13,9 @@ import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import ProfileList from "./pages/ProfileList";
+import ProfileAdd from "./pages/ProfileAdd";
+import ProfileEdit from "./pages/ProfileEdit";
 
 import Users from "./pages/Users";
 import UsersAdd from "./pages/Users/AddUsers"
@@ -38,7 +41,9 @@ export default function App() {
           <Route path="/clientes" element={ <CustomersList/> }   />
           <Route path="/usuarios" element={ <Users/> }   />
           <Route path="/usuarios/novo" element={ <UsersAdd/> }   />
-         
+          <Route path="/perfis" element={<ProfileList/>}/>
+          <Route path="/perfis/novo" element={<ProfileAdd/>}/>
+          <Route path="/perfis/:id" element={<ProfileEdit/>}/>
 
         </Routes>
       </BrowserRouter>

@@ -9,7 +9,7 @@ export default function Nova(){
           <Input label="Nome"/>
           <Input label="Descrição"/>
           <Input label="Foto"/>
-          <Button variant="contained">Enviar</Button>
+          <Button variant="contained" fullWidth>Enviar</Button>
         </>
 
     );
