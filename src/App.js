@@ -13,6 +13,7 @@ import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import VehiclesAdd from "./pages/VehiclesAdd";
 import ProfileList from "./pages/ProfileList";
 import ProfileAdd from "./pages/ProfileAdd";
 import ProfileEdit from "./pages/ProfileEdit";
@@ -39,6 +40,8 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/veiculos/novo" element={ <VehiclesAdd/> }   />
+         
           <Route path="/usuarios" element={ <Users/> }   />
           <Route path="/usuarios/novo" element={ <UsersAdd/> }   />
           <Route path="/perfis" element={<ProfileList/>}/>

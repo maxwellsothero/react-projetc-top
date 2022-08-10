@@ -109,8 +109,20 @@
             "password":"aaa@1",
             "profile":"gerente"
         }
-    ]
+    ],
+    "vehicles": [
+        {
+            "id":1,
+            "plate":"ab22er",
+            "make":"fiat",
+            "model":"palio",
+            "year": "2022"
+        }
+        
+    ],
     
 
 }
 
+
+    
