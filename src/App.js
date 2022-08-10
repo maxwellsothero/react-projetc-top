@@ -8,11 +8,13 @@ import Help from "./pages/Help";
 import CategoryList from "./pages/CategoryList";
 import RecoverAccount from "./pages/RecoverAccount";
 import Nova from "./pages/CategoryList/Nova";
+import ProfileAdd from "./pages/ProfileAdd";
 
 import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import Providers from "./pages/Providers";
 import VehiclesAdd from "./pages/VehiclesAdd";
 import ProfileList from "./pages/ProfileList";
 import ProfileAdd from "./pages/ProfileAdd";
@@ -40,6 +42,9 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/fornecedor" element={ <Providers/> }   />
+          <Route path="/novo" element={ <ProfileAdd/> }   />
+          
           <Route path="/veiculos/novo" element={ <VehiclesAdd/> }   />
          
           <Route path="/usuarios" element={ <Users/> }   />
