@@ -13,6 +13,7 @@ import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import VehiclesAdd from "./pages/VehiclesAdd";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/veiculos/novo" element={ <VehiclesAdd/> }   />
          
 
         </Routes>

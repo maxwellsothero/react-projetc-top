@@ -10,6 +10,9 @@ export default function Cards(props) {
   return (
     <Card className='card' sx={{ maxWidth: "100%" }}>
       <CardActionArea>
+        {props
+          
+        }
         <CardMedia
           component="img"
           height="140"
