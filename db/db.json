@@ -1,79 +1,106 @@
-
 {
-    "produtos":[
-        {
-            "id": 1,
-            "name":"Café",
-            "description": "torrado",
-            "category": "tradicional"
-        }
-        ,
-        
-        {
-            "id": 2,
-            "name":"leite",
-            "description": "liquido",
-            "category": "integral"
-        },
-
-        {
-            "id": 3,
-            "name":"pão",
-            "description": "carioca",
-            "category": "pequeno"
-        }
-
-
-    ],
-
-    "category":[
-        {
-            "id":1,
-            "name":"3 Corações",
-            "description":"torrado",
-            "photo":""
-        },
-        {
-            "id":2,
-            "name":"Nestle",
-            "description":"de vaca",
-            "photo":""
-        },
-        {
-            "id":3,
-            "name":"de trigo",
-            "description":"assado",
-            "photo":""
-        }
-    ],
-
-    "client":[
-        {
-            "id":1,
-            "name":"Jose da Silva",
-            "phone":"66 8856 9985",
-            "email":"josedasilva@gmail"
-
-        },
-        {
-            "id":2,
-            "name":"maria da Silva",
-            "phone":"85 9999 9985",
-            "email":"mariadasilva@gmail"
-
-        },
-        {
-            "id":3,
-            "name":"carlos de Souza",
-            "phone":"77 8855 4477",
-            "email":"carlos@gmail"
-
-        }
-    ]
-    
-
+  "produtos": [
+    {
+      "id": 1,
+      "name": "Café",
+      "description": "torrado",
+      "category": "tradicional"
+    },
+    {
+      "id": 2,
+      "name": "leite",
+      "description": "liquido",
+      "category": "integral"
+    },
+    {
+      "id": 3,
+      "name": "pão",
+      "description": "carioca",
+      "category": "pequeno"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "3 Corações",
+      "description": "torrado",
+      "photo": ""
+    },
+    {
+      "id": 2,
+      "name": "Nestle",
+      "description": "de vaca",
+      "photo": ""
+    },
+    {
+      "id": 3,
+      "name": "de trigo",
+      "description": "assado",
+      "photo": ""
+    }
+  ],
+  "client": [
+    {
+      "id": 1,
+      "name": "Jose da Silva",
+      "phone": "66 8856 9985",
+      "email": "josedasilva@gmail"
+    },
+    {
+      "id": 2,
+      "name": "maria da Silva",
+      "phone": "85 9999 9985",
+      "email": "mariadasilva@gmail"
+    },
+    {
+      "id": 3,
+      "name": "carlos de Souza",
+      "phone": "77 8855 4477",
+      "email": "carlos@gmail"
+    }
+  ],
+  "collaborators": [
+    {
+      "id": 1,
+      "name": "João Santos",
+      "cpf": "065.985.965-85",
+      "sallary": "1.500,00",
+      "created_in": "01/08/2022"
+    },
+    {
+      "id": 2,
+      "name": "Ana Sousa",
+      "cpf": "065.258.654-74",
+      "sallary": "2.500,00",
+      "created_in": "01/07/2022"
+    },
+    {
+      "id": 1,
+      "name": "Laura Silva",
+      "cpf": "528.521.965-23",
+      "sallary": "1.212,00",
+      "created_in": "01/09/2022"
+    },
+    {
+      "name": "Luana Martins",
+      "cpf": "852.654",
+      "salario": "1400",
+      "data": "12",
+      "id": 3
+    },
+    {
+      "name": "",
+      "cpf": "025.985",
+      "salario": "1500",
+      "data": "05",
+      "id": 4
+    },
+    {
+      "name": "Jose Leao",
+      "cpf": "056.654",
+      "salario": "1500",
+      "data": "05",
+      "id": 5
+    }
+  ]
 }
-
-
-
-

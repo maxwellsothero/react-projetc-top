@@ -13,6 +13,8 @@ import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import Colaboradores from "./pages/Colaboradores";
+import CollaboratorsAdd from "./pages/CollaboratorsAdd";
 
 export default function App() {
   return (
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/colaboradores" element={<Colaboradores/>}/>
+          <Route path="/colaboradores/novo" element={<CollaboratorsAdd/>}/>
          
 
         </Routes>
