@@ -10,15 +10,15 @@ export default function Cards(props) {
   return (
     <Card className='card' sx={{ maxWidth: "100%" }}>
       <CardActionArea>
-        {props
-          
-        }
-        <CardMedia
-          component="img"
-          height="140"
-          image={props.image}
-          alt={props.imgdesc}
-        />
+        
+       {props.image &&
+         <CardMedia
+         component="img"
+         height="140"
+         image={props.image}
+         alt={props.imgdesc}
+       />
+       }
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.titulo}
@@ -28,7 +28,10 @@ export default function Cards(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <Divider/>
+      <Divider style={{marginBottom: 10}}/>
+
+      {props.footer || ''}
+
     </Card>
     
   );
