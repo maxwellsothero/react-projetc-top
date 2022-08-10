@@ -17,6 +17,9 @@ import ProfileList from "./pages/ProfileList";
 import ProfileAdd from "./pages/ProfileAdd";
 import ProfileEdit from "./pages/ProfileEdit";
 
+import Users from "./pages/Users";
+import UsersAdd from "./pages/Users/AddUsers"
+
 export default function App() {
   return (
     <div className="app">
@@ -36,11 +39,11 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
-
+          <Route path="/usuarios" element={ <Users/> }   />
+          <Route path="/usuarios/novo" element={ <UsersAdd/> }   />
           <Route path="/perfis" element={<ProfileList/>}/>
           <Route path="/perfis/novo" element={<ProfileAdd/>}/>
           <Route path="/perfis/:id" element={<ProfileEdit/>}/>
-         
 
         </Routes>
       </BrowserRouter>
