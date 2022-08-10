@@ -8,11 +8,13 @@ import Help from "./pages/Help";
 import CategoryList from "./pages/CategoryList";
 import RecoverAccount from "./pages/RecoverAccount";
 import Nova from "./pages/CategoryList/Nova";
+import ProfileAdd from "./pages/ProfileAdd";
 
 import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import Providers from "./pages/Providers";
 
 export default function App() {
   return (
@@ -33,6 +35,9 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+          <Route path="/fornecedor" element={ <Providers/> }   />
+          <Route path="/novo" element={ <ProfileAdd/> }   />
+          
          
 
         </Routes>

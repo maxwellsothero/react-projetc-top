@@ -69,10 +69,27 @@
             "email":"carlos@gmail"
 
         }
-    ]
+    ],
     
 
+    "providers":[
+        {
+            "id": 1,
+            "name":"Pague menos",
+            "address":"av 13 de maio, n13 - Fortaleza-ce",
+            "phone":"85 9 8588 6655"
+        },
+
+        {   
+            "id": 2,
+            "name":"Ambev",
+            "address":"Rua 13, n 15 - Maracanau-ce",
+            "phone":"85 9 6688 9955"
+
+        }
+    ]
 }
+
 
 
 
