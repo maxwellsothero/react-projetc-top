@@ -10,7 +10,8 @@ export default function Cards(props) {
   return (
     <Card className='card' sx={{ maxWidth: "100%" }}>
       <CardActionArea>
-        {props.image && <CardMedia
+
+         {props.image && <CardMedia
           component="img"
           height="140"
           image={props.image}
@@ -25,7 +26,10 @@ export default function Cards(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <Divider/>
+      <Divider style={{marginBottom: 10}}/>
+
+      {props.footer || ''}
+
     </Card>
     
   );
