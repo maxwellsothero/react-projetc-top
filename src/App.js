@@ -13,6 +13,9 @@ import './style.css';
 import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
+import ProfileList from "./pages/ProfileList";
+import ProfileAdd from "./pages/ProfileAdd";
+import ProfileEdit from "./pages/ProfileEdit";
 
 export default function App() {
   return (
@@ -33,6 +36,10 @@ export default function App() {
           <Route path="/categorias/nova" element={<Nova/>} />
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
+
+          <Route path="/perfis" element={<ProfileList/>}/>
+          <Route path="/perfis/novo" element={<ProfileAdd/>}/>
+          <Route path="/perfis/:id" element={<ProfileEdit/>}/>
          
 
         </Routes>
