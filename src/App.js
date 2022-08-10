@@ -15,6 +15,7 @@ import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
 
 import Users from "./pages/Users";
+import UsersAdd from "./pages/Users/AddUsers"
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/produtos" element={ <Produtos/> }   />
           <Route path="/clientes" element={ <CustomersList/> }   />
           <Route path="/usuarios" element={ <Users/> }   />
+          <Route path="/usuarios/novo" element={ <UsersAdd/> }   />
          
 
         </Routes>
