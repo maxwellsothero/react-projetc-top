@@ -17,7 +17,6 @@ import CustomersList from "./pages/CustomersList";
 import Providers from "./pages/Providers";
 import VehiclesAdd from "./pages/VehiclesAdd";
 import ProfileList from "./pages/ProfileList";
-import ProfileAdd from "./pages/ProfileAdd";
 import ProfileEdit from "./pages/ProfileEdit";
 
 import Users from "./pages/Users";

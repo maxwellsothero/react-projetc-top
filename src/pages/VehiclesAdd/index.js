@@ -1,4 +1,4 @@
-import { Divider, TextField } from "@mui/material";
+import { Divider, Button, TextField } from "@mui/material";
 import { useState } from "react";
 
 export default function VehiclesAdd() {
@@ -38,8 +38,7 @@ export default function VehiclesAdd() {
                 <Button fullWidth variant="contained">
                     Salvar
 
-                </B
-                utton>
+                </Button>
             </form>
         </div>
 
