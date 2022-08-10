@@ -135,9 +135,56 @@
             "phone":"85 9 6688 9955"
 
         }
-    ]
+    ],
+     
+  "collaborators": [
+    {
+      "id": 1,
+      "name": "João Santos",
+      "cpf": "065.985.965-85",
+      "sallary": "1.500,00",
+      "created_in": "01/08/2022"
+    },
+    {
+      "id": 2,
+      "name": "Ana Sousa",
+      "cpf": "065.258.654-74",
+      "sallary": "2.500,00",
+      "created_in": "01/07/2022"
+    },
+    {
+      "id": 1,
+      "name": "Laura Silva",
+      "cpf": "528.521.965-23",
+      "sallary": "1.212,00",
+      "created_in": "01/09/2022"
+    },
+    {
+      "name": "Luana Martins",
+      "cpf": "852.654",
+      "salario": "1400",
+      "data": "12",
+      "id": 3
+    },
+    {
+      "name": "",
+      "cpf": "025.985",
+      "salario": "1500",
+      "data": "05",
+      "id": 4
+    },
+    {
+      "name": "Jose Leao",
+      "cpf": "056.654",
+      "salario": "1500",
+      "data": "05",
+      "id": 5
+    }
+  ]
+
+
 
 }
 
 
-   
+  

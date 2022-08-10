@@ -10,13 +10,13 @@ export default function Cards(props) {
   return (
     <Card className='card' sx={{ maxWidth: "100%" }}>
       <CardActionArea>
+
          {props.image && <CardMedia
           component="img"
           height="140"
           image={props.image}
           alt={props.imgdesc}
         />}
-        
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.titulo}

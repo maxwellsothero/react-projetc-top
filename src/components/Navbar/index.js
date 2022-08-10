@@ -92,6 +92,11 @@ export default function Navbar() {
             <ListItemIcon><ContactSupport/></ListItemIcon>
             <ListItemText>Ajuda</ListItemText>
           </ListItemButton>
+          
+          <ListItemButton onClick={() => redirect('/colaboradores')}>
+            <ListItemIcon><Group/></ListItemIcon>
+            <ListItemText>Colaboradores</ListItemText>
+          </ListItemButton>
 
           <Divider/>
 
@@ -99,6 +104,9 @@ export default function Navbar() {
             <ListItemIcon className="sair_texto"><ExitToApp/></ListItemIcon>
             <ListItemText>Sair</ListItemText>
           </ListItemButton>
+          
+
+
           
 
         </List>
