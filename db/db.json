@@ -1,5 +1,22 @@
-
 {
+    "profiles": [
+      {
+        "name": "Teste",
+        "permissions": [
+          "Teste"
+        ],
+        "id": 1
+      },
+      {
+        "name": "Administrador",
+        "permissions": [
+          "criar",
+          "listar",
+          "excluir"
+        ],
+        "id": 2
+      }
+    ],
     "produtos":[
         {
             "id": 1,
@@ -70,8 +87,39 @@
 
         }
     ],
-    
-
+    "users":[
+        {
+            "id":1,
+            "name":"Maxwell Sothero",
+            "email":"localizameucarro@gmail.com",
+            "password":"M123@1",
+            "profile":"admin"
+        },
+        {
+            "id":2,
+            "name":"Ravi Sothero",
+            "email":"Ravisothero@gmail.com",
+            "password":"Mkk3@1",
+            "profile":"user"
+        },
+        {
+            "id":3,
+            "name":"Franklyn Sothero",
+            "email":"franklynsothero@gmail.com",
+            "password":"aaa@1",
+            "profile":"gerente"
+        }
+    ],
+    "vehicles": [
+        {
+            "id":1,
+            "plate":"ab22er",
+            "make":"fiat",
+            "model":"palio",
+            "year": "2022"
+        }
+        
+    ],
     "providers":[
         {
             "id": 1,
@@ -88,9 +136,8 @@
 
         }
     ]
+
 }
 
 
-
-
-
+   

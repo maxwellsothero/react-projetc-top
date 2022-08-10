@@ -28,7 +28,7 @@ export default function Help() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography  align="center" sx={{ width: '33%', flexShrink: 0 }}>
             Problema de Login
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>Não Conseguiu Acessar</Typography>
@@ -45,7 +45,7 @@ export default function Help() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Financeiro:</Typography>
+          <Typography align="center" sx={{ width: '33%', flexShrink: 0 }}>Financeiro:</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             2º via de Boleto
           </Typography>
@@ -64,7 +64,7 @@ export default function Help() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography align="center" sx={{ width: '33%', flexShrink: 0 }}>
            Setor Técnico
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
@@ -84,7 +84,7 @@ export default function Help() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }} >Suporte 24 Horas</Typography>
+          <Typography align="center" sx={{ width: '33%', flexShrink: 0 }} >Suporte 24 Horas</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

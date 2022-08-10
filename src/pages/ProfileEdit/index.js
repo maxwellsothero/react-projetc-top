@@ -1,7 +1,10 @@
 import { Button, Divider, TextField } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-export default function ProfileAdd() {
+export default function ProfileEdit() {
+    let params = useParams();
+
     const [name, setName] = useState('');
     const [permissions, setPermissions] = useState('');
 
@@ -13,9 +16,18 @@ export default function ProfileAdd() {
         setPermissions(event.target.value);
     }
 
+    useEffect(() => {
+        fetch('http://localhost:9000/profiles/'+params.id)
+            .then(response => response.json())
+            .then(response => {
+                setName(response.name);
+                setPermissions(response.permissions.join(', '))
+            })
+    }, [params]);
+
     const save = () => {
-        fetch ('http://localhost:9000/profiles', {
-            method: 'POST',
+        fetch ('http://localhost:9000/profiles/'+params.id, {
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -30,17 +42,13 @@ export default function ProfileAdd() {
 
     return (
         <div>
-            <h1 align="center"> - Novo Perfil - </h1>
+            <h1 align="center"> - Editar Perfil - </h1>
 
             <Divider/>
 
-            <p>
-                Você está cadastrando o perfil {name}
-            </p>
-
             <form>
-                <TextField onChange={handleName} label="Nome" fullWidth/>
-                <TextField onChange={handlePermissions} label="Permissões" style={{marginTop: 20, marginBottom: 20}} fullWidth/>
+                <TextField value={name} onChange={handleName} label="Nome" fullWidth/>
+                <TextField value={permissions} onChange={handlePermissions} label="Permissões" style={{marginTop: 20, marginBottom: 20}} fullWidth/>
                 
                 <Button onClick={save} fullWidth variant="contained">
                     Salvar

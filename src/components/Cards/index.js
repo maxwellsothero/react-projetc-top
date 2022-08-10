@@ -26,7 +26,10 @@ export default function Cards(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <Divider/>
+      <Divider style={{marginBottom: 10}}/>
+
+      {props.footer || ''}
+
     </Card>
     
   );

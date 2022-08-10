@@ -15,6 +15,13 @@ import Navbar from "./components/Navbar";
 import Produtos from "./pages/Produtos";
 import CustomersList from "./pages/CustomersList";
 import Providers from "./pages/Providers";
+import VehiclesAdd from "./pages/VehiclesAdd";
+import ProfileList from "./pages/ProfileList";
+import ProfileAdd from "./pages/ProfileAdd";
+import ProfileEdit from "./pages/ProfileEdit";
+
+import Users from "./pages/Users";
+import UsersAdd from "./pages/Users/AddUsers"
 
 export default function App() {
   return (
@@ -38,7 +45,13 @@ export default function App() {
           <Route path="/fornecedor" element={ <Providers/> }   />
           <Route path="/novo" element={ <ProfileAdd/> }   />
           
+          <Route path="/veiculos/novo" element={ <VehiclesAdd/> }   />
          
+          <Route path="/usuarios" element={ <Users/> }   />
+          <Route path="/usuarios/novo" element={ <UsersAdd/> }   />
+          <Route path="/perfis" element={<ProfileList/>}/>
+          <Route path="/perfis/novo" element={<ProfileAdd/>}/>
+          <Route path="/perfis/:id" element={<ProfileEdit/>}/>
 
         </Routes>
       </BrowserRouter>
